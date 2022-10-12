@@ -23,6 +23,7 @@
     </nav>
     <form action="">
         <div>
+                <h1 style="text-align:center; font-weight: bold;">GET IN TOUCH</h1>
             <label for="input-name">Name</label>
             <input height="50" type="text" id="input-name" required>
         </div>
@@ -35,12 +36,12 @@
             <input height="50" type="number" id="input-nohp" required>
         </div>
         <div>
-            <label for="input-subject">subject</label>
-            <select name="" id="input-subject">
-                <option value="" hidden >select</option>
-                <option value="">Backend</option>
-                <option value="">Fullstack</option>
-                <option value="">Front End</option>
+            <label for="input-subject">Subject</label>
+            <select id="input-subject" required>
+                <option value="" hidden>Select</option>
+                <option>FrontEnd</option>
+                <option>BackEnd</option>
+                <option>Fullstack</option>
             </select>
         </div>
         <div>
@@ -48,8 +49,9 @@
             <textarea name="" id="input-messege" cols="40" rows="5"></textarea>
         </div>
         <div>
-            <button class="button2">Submit</button>
+            <button onclick="ShowData()" class="button2">Submit</button>
         </div>
     </form>
 </body>
+<script src="contact.js"></script>
 </html>
